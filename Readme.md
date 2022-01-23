@@ -16,4 +16,13 @@ pip install django-filter
 
 ```bash
 'restframework', 
+'rest_framework.authtoken'
 ```
+
+#Modulos creados:
+```bash
+    Login
+    Register
+    PrimerComponente
+```
+
