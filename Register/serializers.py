@@ -6,7 +6,7 @@ class UserSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=15)
     email = serializers.CharField()
     password = serializers.CharField()
-
+    #crea el usuario
     def create(self,validate_data):
         instace = User()
         instace.username = validate_data.get('username')
@@ -15,6 +15,7 @@ class UserSerializer(serializers.Serializer):
         instace.save()
         return instace
 
+    #valida la existencia del usuario
     def validate_usernames(self,data):
         users = User.objects.filter(username=data)
         if len(users) > 0:
