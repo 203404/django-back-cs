@@ -24,6 +24,7 @@ router.register(r'users', UserViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
+    #URL de registro
     re_path(r'^api/v1/create_user', UserAPI.as_view(), name='create_user'),
     re_path(r'^api/v1/login', include('Login.urls')),
     re_path(r'^api/v1/primer_componente/', include('primerComponente.urls')),
