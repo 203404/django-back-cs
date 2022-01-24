@@ -1,6 +1,8 @@
 from django.urls import path, include, re_path
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
+
+#import Register 
 from Register.api import UserAPI
 
 # Serializers define the API representation.
