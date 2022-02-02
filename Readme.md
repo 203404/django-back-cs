@@ -26,3 +26,17 @@ pip install django-filter
     PrimerComponente
 ```
 
+#Python-dotENV
+
+```bash
+pip install python-dotenv
+```
+
+
+```bash
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+```
+
