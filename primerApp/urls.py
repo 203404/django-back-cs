@@ -1,6 +1,8 @@
 from django.urls import path, include, re_path
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
+from django.conf import settings
+from django.conf.urls.static import static
 
 #import Register 
 from Register.api import UserAPI
@@ -27,7 +29,10 @@ urlpatterns = [
     #URL de registro
     re_path(r'^api/v1/create_user', UserAPI.as_view(), name='create_user'),
     re_path(r'^api/v1/login', include('Login.urls')),
+    re_path(r'^api/v1/load_image/', include('loadImage.urls')),
     re_path(r'^api/v1/primer_componente/', include('primerComponente.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 
 ]
+#(NOT USED, IGNORE)
+#urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

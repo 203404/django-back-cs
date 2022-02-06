@@ -12,6 +12,7 @@ from primerComponente.serializers import PrimerTablaSerializer
 # Json
 import json
 
+
 # Create your views here.
 class PrimerTablaList(APIView):
     def jsonMaker(self, message, data, status):
@@ -35,8 +36,6 @@ class PrimerTablaList(APIView):
             datas = serializer.data
             return Response(datas, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
 class PrimerTablaDetail(APIView):
     def get_object(self, pk):
         try:
