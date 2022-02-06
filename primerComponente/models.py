@@ -7,4 +7,6 @@ class PrimerTabla(models.Model):
     edad = models.IntegerField(default=0, null= False)
     created = models.DateTimeField(default = timezone.now)
     edit = models.DateTimeField(blank=True, null=True, default=None)
-    imagen = models.ImageField(default='', blank='', upload_to='media/')
+    
+    #NOT USED IGNORE
+    #imagen = models.ImageField(default='', blank='', upload_to='media/')
