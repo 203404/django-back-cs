@@ -40,4 +40,9 @@ import os
 
 load_dotenv()
 ```
+#Pillow
+
+```bash
+pip install Pillow
+```
 
