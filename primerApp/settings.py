@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'Login',
     'Register',
     'loadImage',
+    'Profile',
     
 
     #librerias aagregar al proyecto
