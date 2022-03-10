@@ -20,7 +20,7 @@ class LoginAuth(ObtainAuthToken):
         
         return Response({
             'token':token.key,
-            'user_id':user.pk,
+            'id_user':user.pk,
             'email':user.email
         })       
  
