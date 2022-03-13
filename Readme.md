@@ -25,6 +25,7 @@ pip install django-filter
     Register
     PrimerComponente
     loadImage
+    Profile
 ```
 
 #Python-dotENV
